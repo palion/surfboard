@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout android:orientation="vertical"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:weightSum="1" android:layout_width="fill_parent" android:id="@+id/linearLayout1"
+	android:layout_height="fill_parent">
+
+	<LinearLayout android:layout_width="wrap_content" android:orientation="horizontal" android:layout_height="35dp">
+		<TextView android:text="@string/intro" android:id="@+id/intro1" android:layout_width="317dp" android:layout_height="40dp"></TextView>
+	</LinearLayout>
+
+	<LinearLayout android:id="@+id/form" android:orientation="horizontal" android:layout_width="fill_parent" android:weightSum="1" android:layout_height="wrap_content" android:layout_weight="0.15">
+		<EditText android:id="@+id/name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight=".5">
+			<requestFocus></requestFocus>
+		</EditText>
+		<Button android:id="@+id/register" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight=".5" android:text="@string/start"></Button>
+	</LinearLayout>
+	
+	<ImageView android:layout_width="fill_parent" android:id="@+id/logo" android:layout_height="400dp" android:src="@drawable/tidal"></ImageView>
+	
+</LinearLayout>
